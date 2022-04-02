@@ -1,0 +1,12 @@
+node_modules/
+lib/
+esm/
+.env
+.DS_Store
+yarn-error.log
+lerna-debug.log
+/.vscode
+/.idea
+db.sqlite
+coverage
+.umi

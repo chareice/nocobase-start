@@ -1,0 +1,26 @@
+{
+  "name": "nocobase-app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start-server": "ts-node-dev --project tsconfig.server.json  packages/server/src/index.ts",
+    "start-client": "cd packages/client && npm run start"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3",
+    "umi": "^3.5.21"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
